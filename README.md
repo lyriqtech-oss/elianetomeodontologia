@@ -1,28 +1,19 @@
-# Eliane Tomé — Odontologia Especializada
+# Eliane Tomé — Odontologia Especializada e Harmonização Facial
 
-Landing page responsiva com tratamentos, harmonização facial, avaliações, FAQ, contato e agendamento pelo WhatsApp.
+Site estático em português da clínica Eliane Tomé, em Pelotas/RS. Inclui o layout responsivo, logotipo, retrato otimizado, tratamentos, avaliações, FAQ e contato pelo WhatsApp.
 
-## Arquivos
-
-O site estático completo está em `dist/`. HTML, CSS e JavaScript sem dependências de compilação.
-
-## Visualização local
+## Executar localmente
 
 ```sh
 python3 -m http.server 8080 --directory dist
 ```
 
-Abra http://localhost:8080.
+Abra http://localhost:8080. Não há dependências nem etapa de build. Publique a pasta `dist` em um serviço de hospedagem estática. O arquivo `vercel.json` configura essa pasta na Vercel.
 
-## Publicação
+## SEO
 
-Configure `dist` como diretório público. Não é necessário executar um build.
+Título e descrição locais, URL canônica, Open Graph, Twitter Cards, JSON-LD com Dentist/WebSite/WebPage/FAQPage, sitemap.xml, robots.txt e llms.txt. As imagens usadas no site estão em WebP. Conteúdo e links de contato funcionam sem JavaScript.
 
-## Edição
+A URL canônica atual é https://eliane-tome-pelotas.rogerioweymar.chatgpt.site/. Se mudar o domínio, atualize a URL em `dist/index.html`, `dist/privacidade.html`, `dist/sitemap.xml` e `dist/robots.txt`, além de `dist/llms.txt`. O acesso público à hospedagem é necessário para indexação.
 
-- Conteúdo e metadados: `dist/index.html`
-- Estilos responsivos: `dist/assets/style.css`
-- Menu e WhatsApp: `dist/assets/site.js`
-- Fotos e logo: `dist/assets/`
-
-A nota do Google e as informações de atendimento devem ser mantidas atualizadas. A contagem de mais de 100 avaliações ainda não foi confirmada e não é exibida.
+As respostas do FAQ reproduzem o conteúdo visível; a marcação não garante resultados enriquecidos. Não há marcação de estrelas de avaliações próprias.
